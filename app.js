@@ -5,7 +5,7 @@ client.on("message", parseMessage);
 client.login(process.env.TOKEN);
 
 function parseMessage(message) {
-	if (message.content.toLowerCase().substring(0, 5) == "~rps ") {
+	if (message.content.toLowerCase().substring(0, 5) == "[rps ") {
 		var rps = ["r", "p", "s"];
 		var rpsfull = ["rock", "paper", "scissors"];
 		var mychoice = Math.floor(Math.random()*3);
