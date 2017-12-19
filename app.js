@@ -6,6 +6,7 @@ var coinflip = require("./bot-modules/coin.js");
 var diceroll = require("./bot-modules/dice.js");
 var question = require("./bot-modules/question.js").question;
 var shortq = require("./bot-modules/question.js").shortq;
+var joke = require("./bot-modules/joke.js");
 
 client.on("message", parseMessage);
 client.login(process.env.TOKEN);
@@ -21,7 +22,8 @@ var embed = {
 		{
 			"name": "Fun Commands",
 			"value": ">> **[rps** - Plays Rock, Paper, Scissors with you! Example: `[rps rock`\n"+
-			">> **[coin** - Flips a coin for you! Example: `[coin` or `[coin heads`"
+			">> **[coin** - Flips a coin for you! Example: `[coin` or `[coin heads`\n"+
+			">> **[joke** - Gives you a nice dad joke, courtesy of [I Can Has Dad Joke](https://icanhazdadjoke.com/)! Example: `[joke`"
 		},
 		{
 			"name": "Useful Commands",
@@ -45,6 +47,9 @@ function parseMessage(message) {
 	}
 	if (content.startsWith("[dice")) {
 		diceroll(message, 6);
+	}
+	if (content.startsWith("[joke")) {
+		joke(message);
 	}
 
 	if (content.startsWith("[question ")) {
