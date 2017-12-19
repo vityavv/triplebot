@@ -37,7 +37,7 @@ function parseMessage(message) {
 	if (content.startsWith("[help")) {
 		message.channel.send({embed});
 	}
-	if (content.startsWith("[rps")) {
+	if (content.startsWith("[rps ")) {
 		rps(message, 5);
 	}
 	if (content.startsWith("[coin")) {
@@ -47,20 +47,20 @@ function parseMessage(message) {
 		diceroll(message, 6);
 	}
 
-	if (content.startsWith("[question")) {
+	if (content.startsWith("[question ")) {
 		question(message, 10);
 	}
-	if (content.startsWith("[q")) {
+	if (content.startsWith("[q ")) {
 		question(message, 3);
 	}
-	if (content.startsWith("[define")) {
+	if (content.startsWith("[define ")) {
 		question(message, 8);
 	}
 
-	if (content.startsWith("[calc")) {
+	if (content.startsWith("[calc ")) {
 		shortq(message, 6);
 	}
-	if (content.startsWith("[shortq")) {
+	if (content.startsWith("[shortq ")) {
 		shortq(message, 8);
 	}
 }
