@@ -7,9 +7,15 @@ var diceroll = require("./bot-modules/dice.js");
 var question = require("./bot-modules/question.js").question;
 var shortq = require("./bot-modules/question.js").shortq;
 var joke = require("./bot-modules/joke.js");
+let config;
+try {
+	config = require("../config.json");
+} catch(e) {
+	config = process.env;
+}
 
 client.on("message", parseMessage);
-client.login(process.env.TOKEN);
+client.login(config.TOKEN);
 
 var embed = {
 	"title": "TripleBot Help Guide",
