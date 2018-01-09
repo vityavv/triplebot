@@ -14,6 +14,7 @@ try {
 	config = process.env;
 }
 
+
 client.on("message", parseMessage);
 client.login(config.TOKEN);
 
