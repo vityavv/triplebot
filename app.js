@@ -9,7 +9,7 @@ var shortq = require("./bot-modules/question.js").shortq;
 var joke = require("./bot-modules/joke.js");
 let config;
 try {
-	config = require("../config.json");
+	config = require("./config.json");
 } catch(e) {
 	config = process.env;
 }
