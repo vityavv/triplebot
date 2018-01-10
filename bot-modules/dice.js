@@ -15,5 +15,5 @@ module.exports = function(message, substring) {
 	}
 	files = files.map((file, index) => ({ attachment: file, name: `roll${index}.png` }));
 	message.channel.send({files});
-	message.channel.send(`Total: ${total}. TESTING`);
+	message.channel.send(`Total: ${total}.`);
 }
