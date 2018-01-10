@@ -36,7 +36,7 @@ var embed = {
 			"name": "Useful Commands",
 			"value": ">> **[help** - This help menu!\n"+
 			">> **[question**, **[q**, **[define** - Ask any question imaginable and have [Wolfram|Alpha](https://www.wolframalpha.com/) answer it for you in image form! Example: `[q what is the net worth of Bill Gates?`\n"+
-			">> **[calc**, **[shortq** - Ask any question imaginable and have [Wolfram|Alpha](https://www.wolframalpha.com/) answer it for you in *sentence* form! Warning: the sentences are super short so this is not suggested for non-math questions. See example above."
+			">> **[calc**, **[shortq** - Ask any question imaginable and have [Wolfram|Alpha](https://www.wolframalpha.com/) answer it for you in *sentence* form! Warning: the sentences are super short so this is not suggested for non-math questions. See example above. TESTING"
 		}
 	]
 };
